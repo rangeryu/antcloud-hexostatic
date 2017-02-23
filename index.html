@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://rangeryu.github.io/antcloud-hexostatic"></form>
@@ -94,20 +94,20 @@
         <h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p><a href="https://github.com/yscoder/hexo-generator-restful/blob/master/README.md" target="_blank" rel="external">https://github.com/yscoder/hexo-generator-restful/blob/master/README.md</a></p>
 <h3 id="Get-Hexo-Config"><a href="#Get-Hexo-Config" class="headerlink" title="Get Hexo Config"></a>Get Hexo Config</h3><p>获取所有 Hexo 配置（站点配置和主题配置）。</p>
 <h6 id="Request"><a href="#Request" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/site.json</div></pre></td></tr></table></figure>
-<h6 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h6><p><a href="/api/site.json">/api/site.json</a></p>
+<h6 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h6><p><a href="/antcloud-hexostatic/api/site.json">/api/site.json</a></p>
 <h3 id="Get-Posts"><a href="#Get-Posts" class="headerlink" title="Get Posts"></a>Get Posts</h3><p>如果配置 <code>posts_size: 0</code> 则不分页，以下请求会获取全部文章。</p>
 <h6 id="Request-1"><a href="#Request-1" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/posts.json</div></pre></td></tr></table></figure>
 <h6 id="Response-1"><a href="#Response-1" class="headerlink" title="Response"></a>Response</h6><p>示例为分页配置下的数据，会包含分页属性 <code>total</code>、<code>pageSize</code>、<code>pageCount</code>，不分页的数据不包含这三项。</p>
-<p><a href="/api/posts.json">/api/posts.json</a></p>
+<p><a href="/antcloud-hexostatic/api/posts.json">/api/posts.json</a></p>
 <h3 id="Get-Posts-By-Page"><a href="#Get-Posts-By-Page" class="headerlink" title="Get Posts By Page"></a>Get Posts By Page</h3><p>获取分页数据</p>
 <h6 id="Request-2"><a href="#Request-2" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/posts/:PageNum.json</div></pre></td></tr></table></figure>
-<h6 id="Response-2"><a href="#Response-2" class="headerlink" title="Response"></a>Response</h6><p><a href="/api/posts/1.json">/api/posts/1.json</a></p>
+<h6 id="Response-2"><a href="#Response-2" class="headerlink" title="Response"></a>Response</h6><p><a href="/antcloud-hexostatic/api/posts/1.json">/api/posts/1.json</a></p>
 <h3 id="Get-All-Tags"><a href="#Get-All-Tags" class="headerlink" title="Get All Tags"></a>Get All Tags</h3><p>获取所有文章标签，如果文章无标签则不生成。</p>
 <h6 id="Request-3"><a href="#Request-3" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/tags.json</div></pre></td></tr></table></figure>
-<h6 id="Response-3"><a href="#Response-3" class="headerlink" title="Response"></a>Response</h6><p><a href="/api/tags.json">/api/tags.json</a></p>
+<h6 id="Response-3"><a href="#Response-3" class="headerlink" title="Response"></a>Response</h6><p><a href="/antcloud-hexostatic/api/tags.json">/api/tags.json</a></p>
 <h3 id="Get-Posts-By-Tag"><a href="#Get-Posts-By-Tag" class="headerlink" title="Get Posts By Tag"></a>Get Posts By Tag</h3><p>获取某一标签下的所有文章</p>
 <h6 id="Request-4"><a href="#Request-4" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/tags/:TagName.json</div></pre></td></tr></table></figure>
-<h6 id="Response-4"><a href="#Response-4" class="headerlink" title="Response"></a>Response</h6><p><a href="/api/tags/mpaas.json">/api/tags/Hexo.json</a></p>
+<h6 id="Response-4"><a href="#Response-4" class="headerlink" title="Response"></a>Response</h6><p><a href="/antcloud-hexostatic/api/tags/mpaas.json">/api/tags/Hexo.json</a></p>
 <h3 id="Get-All-Categories"><a href="#Get-All-Categories" class="headerlink" title="Get All Categories"></a>Get All Categories</h3><p>获取所有文章分类，如果文章无分类则不生成。</p>
 <h6 id="Request-5"><a href="#Request-5" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/categories.json</div></pre></td></tr></table></figure>
 <h6 id="Response-5"><a href="#Response-5" class="headerlink" title="Response"></a>Response</h6><p>数据格式同 Get All Tags</p>
@@ -116,12 +116,12 @@
 <h6 id="Response-6"><a href="#Response-6" class="headerlink" title="Response"></a>Response</h6><p>数据格式同 Get Posts By Tag</p>
 <h3 id="Get-Post-By-Slug"><a href="#Get-Post-By-Slug" class="headerlink" title="Get Post By Slug"></a>Get Post By Slug</h3><p>根据文章别名获取文章详细信息</p>
 <h6 id="Request-7"><a href="#Request-7" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/articles/:Slug.json</div></pre></td></tr></table></figure>
-<h6 id="Response-7"><a href="#Response-7" class="headerlink" title="Response"></a>Response</h6><p><a href="/api/articles/test2.json">/api/articles/test2.json</a></p>
+<h6 id="Response-7"><a href="#Response-7" class="headerlink" title="Response"></a>Response</h6><p><a href="/antcloud-hexostatic/api/articles/test2.json">/api/articles/test2.json</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/03/26/api-guide/" data-id="cizi1xv9c0000wt2nehglkx29" class="article-share-link">Share</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/03/26/api-guide/" data-id="cizi54hy90000kc2nwla9sslv" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li></ul>
@@ -168,7 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/26/newposttest/" data-id="cizi1xva0000awt2n51t6c7bo" class="article-share-link">Share</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/26/newposttest/" data-id="cizi54hyl0004kc2n4jvy3zk1" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/test/">test</a></li></ul>
@@ -295,7 +295,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/mpaas-publish/" data-id="cizi1xv9t0005wt2n39afxrb6" class="article-share-link">Share</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/mpaas-publish/" data-id="cizi54hyq0006kc2n0t7sjx47" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/mpaas/">mpaas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/公告/">公告</a></li></ul>
@@ -342,7 +342,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/mpaas-history/" data-id="cizi1xv9p0004wt2ndbzltfl7" class="article-share-link">Share</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/mpaas-history/" data-id="cizi54hyo0005kc2n3nomr3cl" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/mpaas/">mpaas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/演进/">演进</a></li></ul>
@@ -389,7 +389,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/test2/" data-id="cizi1xv9w0006wt2n9yiju2mc" class="article-share-link">Share</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/test2/" data-id="cizi54hyu000akc2ni9bms54m" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/test/">test</a></li></ul>
@@ -437,7 +437,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/hello-world/" data-id="cizi1xv9h0001wt2niym6m273" class="article-share-link">Share</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/hello-world/" data-id="cizi54hye0001kc2njwlgbllo" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -454,7 +454,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Catégories</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/lab/">lab</a></li></ul>
     </div>
@@ -464,7 +464,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Mot-clés</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/mpaas/">mpaas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/test/">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/公告/">公告</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/演进/">演进</a></li></ul>
     </div>
@@ -474,7 +474,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nuage de mot-clés</h3>
     <div class="widget tagcloud">
       <a href="/antcloud-hexostatic/tags/hello-world/" style="font-size: 20px;">hello world</a> <a href="/antcloud-hexostatic/tags/mpaas/" style="font-size: 15px;">mpaas</a> <a href="/antcloud-hexostatic/tags/test/" style="font-size: 15px;">test</a> <a href="/antcloud-hexostatic/tags/公告/" style="font-size: 10px;">公告</a> <a href="/antcloud-hexostatic/tags/演进/" style="font-size: 10px;">演进</a>
     </div>
@@ -493,7 +493,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -530,7 +530,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Ranger Yu<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
