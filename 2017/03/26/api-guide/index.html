@@ -8,8 +8,7 @@
   <meta name="description" content="Documenthttps://github.com/yscoder/hexo-generator-restful/blob/master/README.md
 Get Hexo Config获取所有 Hexo 配置（站点配置和主题配置）。
 Request1GET /api/site.json
-Response/api/site.json
-Get Posts如果配置 posts_size: 0 则不">
+Response&amp;lt;%= url_for(path) %&amp;gt;Do not just seek ha">
 <meta property="og:type" content="article">
 <meta property="og:title" content="API 指导说明">
 <meta property="og:url" content="https://rangeryu.github.io/antcloud-hexostatic/2017/03/26/api-guide/index.html">
@@ -17,16 +16,14 @@ Get Posts如果配置 posts_size: 0 则不">
 <meta property="og:description" content="Documenthttps://github.com/yscoder/hexo-generator-restful/blob/master/README.md
 Get Hexo Config获取所有 Hexo 配置（站点配置和主题配置）。
 Request1GET /api/site.json
-Response/api/site.json
-Get Posts如果配置 posts_size: 0 则不">
-<meta property="og:updated_time" content="2017-02-23T12:08:37.000Z">
+Response&amp;lt;%= url_for(path) %&amp;gt;Do not just seek ha">
+<meta property="og:updated_time" content="2017-03-02T05:04:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="API 指导说明">
 <meta name="twitter:description" content="Documenthttps://github.com/yscoder/hexo-generator-restful/blob/master/README.md
 Get Hexo Config获取所有 Hexo 配置（站点配置和主题配置）。
 Request1GET /api/site.json
-Response/api/site.json
-Get Posts如果配置 posts_size: 0 则不">
+Response&amp;lt;%= url_for(path) %&amp;gt;Do not just seek ha">
   
     <link rel="alternate" href="/atom.xml" title="Ranger&#39;s Hexo Blog" type="application/atom+xml">
   
@@ -36,7 +33,7 @@ Get Posts如果配置 posts_size: 0 则不">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="/ranger/antcloud-hexostatic/css/style.css">
+  <link rel="stylesheet" href="/antcloud-hexostatic/css/style.css">
   
 
 </head>
@@ -49,11 +46,11 @@ Get Posts如果配置 posts_size: 0 则不">
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/ranger/antcloud-hexostatic/" id="logo">Ranger&#39;s Hexo Blog</a>
+        <a href="/antcloud-hexostatic/" id="logo">Ranger&#39;s Hexo Blog</a>
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/ranger/antcloud-hexostatic/" id="subtitle">Proof Of Concept</a>
+          <a href="/antcloud-hexostatic/" id="subtitle">Proof Of Concept</a>
         </h2>
       
     </div>
@@ -61,9 +58,9 @@ Get Posts如果配置 posts_size: 0 则不">
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/ranger/antcloud-hexostatic/">Home</a>
+          <a class="main-nav-link" href="/antcloud-hexostatic/">Home</a>
         
-          <a class="main-nav-link" href="/ranger/antcloud-hexostatic/archives">Archives</a>
+          <a class="main-nav-link" href="/antcloud-hexostatic/archives">Archives</a>
         
       </nav>
       <nav id="sub-nav">
@@ -81,12 +78,12 @@ Get Posts如果配置 posts_size: 0 则不">
       <div class="outer">
         <section id="main"><article id="post-api-guide" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/ranger/antcloud-hexostatic/2017/03/26/api-guide/" class="article-date">
+    <a href="/antcloud-hexostatic/2017/03/26/api-guide/" class="article-date">
   <time datetime="2017-03-26T03:30:00.000Z" itemprop="datePublished">2017-03-26</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/ranger/antcloud-hexostatic/categories/lab/">lab</a>
+    <a class="article-category-link" href="/antcloud-hexostatic/categories/lab/">lab</a>
   </div>
 
   </div>
@@ -108,7 +105,9 @@ Get Posts如果配置 posts_size: 0 则不">
         <h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p><a href="https://github.com/yscoder/hexo-generator-restful/blob/master/README.md" target="_blank" rel="external">https://github.com/yscoder/hexo-generator-restful/blob/master/README.md</a></p>
 <h3 id="Get-Hexo-Config"><a href="#Get-Hexo-Config" class="headerlink" title="Get Hexo Config"></a>Get Hexo Config</h3><p>获取所有 Hexo 配置（站点配置和主题配置）。</p>
 <h6 id="Request"><a href="#Request" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/site.json</div></pre></td></tr></table></figure>
-<h6 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h6><p><a href="/antcloud-hexostatic/api/site.json">/api/site.json</a></p>
+<h6 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h6><p>&lt;%= url_for(path) %&gt;<br><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote></p>
+<p><a href="/antcloud-hexostatic/api/site.json">/api/site.json</a></p>
 <h3 id="Get-Posts"><a href="#Get-Posts" class="headerlink" title="Get Posts"></a>Get Posts</h3><p>如果配置 <code>posts_size: 0</code> 则不分页，以下请求会获取全部文章。</p>
 <h6 id="Request-1"><a href="#Request-1" class="headerlink" title="Request"></a>Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /api/posts.json</div></pre></td></tr></table></figure>
 <h6 id="Response-1"><a href="#Response-1" class="headerlink" title="Response"></a>Response</h6><p>示例为分页配置下的数据，会包含分页属性 <code>total</code>、<code>pageSize</code>、<code>pageCount</code>，不分页的数据不包含这三项。</p>
@@ -135,10 +134,10 @@ Get Posts如果配置 posts_size: 0 则不">
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/ranger/antcloud-hexostatic/2017/03/26/api-guide/" data-id="cizr538da00007x2nln6f2jyl" class="article-share-link">Share</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/03/26/api-guide/" data-id="cizr538da00007x2nln6f2jyl" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/ranger/antcloud-hexostatic/tags/hello-world/">hello world</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li></ul>
 
     </footer>
   </div>
@@ -147,7 +146,7 @@ Get Posts如果配置 posts_size: 0 则不">
 <nav id="article-nav">
   
   
-    <a href="/ranger/antcloud-hexostatic/2017/02/26/newposttest/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/antcloud-hexostatic/2017/02/26/newposttest/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">new post test</div>
     </a>
@@ -165,7 +164,7 @@ Get Posts如果配置 posts_size: 0 则不">
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/ranger/antcloud-hexostatic/categories/lab/">lab</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/lab/">lab</a></li></ul>
     </div>
   </div>
 
@@ -175,7 +174,7 @@ Get Posts如果配置 posts_size: 0 则不">
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/ranger/antcloud-hexostatic/tags/hello-world/">hello world</a></li><li class="tag-list-item"><a class="tag-list-link" href="/ranger/antcloud-hexostatic/tags/mpaas/">mpaas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/ranger/antcloud-hexostatic/tags/test/">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/ranger/antcloud-hexostatic/tags/公告/">公告</a></li><li class="tag-list-item"><a class="tag-list-link" href="/ranger/antcloud-hexostatic/tags/演进/">演进</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/mpaas/">mpaas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/test/">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/公告/">公告</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/演进/">演进</a></li></ul>
     </div>
   </div>
 
@@ -185,7 +184,7 @@ Get Posts如果配置 posts_size: 0 则不">
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/ranger/antcloud-hexostatic/tags/hello-world/" style="font-size: 20px;">hello world</a> <a href="/ranger/antcloud-hexostatic/tags/mpaas/" style="font-size: 15px;">mpaas</a> <a href="/ranger/antcloud-hexostatic/tags/test/" style="font-size: 15px;">test</a> <a href="/ranger/antcloud-hexostatic/tags/公告/" style="font-size: 10px;">公告</a> <a href="/ranger/antcloud-hexostatic/tags/演进/" style="font-size: 10px;">演进</a>
+      <a href="/antcloud-hexostatic/tags/hello-world/" style="font-size: 20px;">hello world</a> <a href="/antcloud-hexostatic/tags/mpaas/" style="font-size: 15px;">mpaas</a> <a href="/antcloud-hexostatic/tags/test/" style="font-size: 15px;">test</a> <a href="/antcloud-hexostatic/tags/公告/" style="font-size: 10px;">公告</a> <a href="/antcloud-hexostatic/tags/演进/" style="font-size: 10px;">演进</a>
     </div>
   </div>
 
@@ -194,7 +193,7 @@ Get Posts如果配置 posts_size: 0 则不">
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/ranger/antcloud-hexostatic/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/ranger/antcloud-hexostatic/archives/2017/02/">February 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/02/">February 2017</a></li></ul>
     </div>
   </div>
 
@@ -207,23 +206,23 @@ Get Posts如果配置 posts_size: 0 则不">
       <ul>
         
           <li>
-            <a href="/ranger/antcloud-hexostatic/2017/03/26/api-guide/">API 指导说明</a>
+            <a href="/antcloud-hexostatic/2017/03/26/api-guide/">API 指导说明</a>
           </li>
         
           <li>
-            <a href="/ranger/antcloud-hexostatic/2017/02/26/newposttest/">new post test</a>
+            <a href="/antcloud-hexostatic/2017/02/26/newposttest/">new post test</a>
           </li>
         
           <li>
-            <a href="/ranger/antcloud-hexostatic/2017/02/15/mpaas-publish/">公测发布：蚂蚁云mPaaS移动服务平台</a>
+            <a href="/antcloud-hexostatic/2017/02/15/mpaas-publish/">公测发布：蚂蚁云mPaaS移动服务平台</a>
           </li>
         
           <li>
-            <a href="/ranger/antcloud-hexostatic/2017/02/15/mpaas-history/">让移动创新更灵动 - 蚂蚁云mPaaS移动平台在支付宝App的演进和实践</a>
+            <a href="/antcloud-hexostatic/2017/02/15/mpaas-history/">让移动创新更灵动 - 蚂蚁云mPaaS移动平台在支付宝App的演进和实践</a>
           </li>
         
           <li>
-            <a href="/ranger/antcloud-hexostatic/2017/02/15/test2/">test2 Hello World</a>
+            <a href="/antcloud-hexostatic/2017/02/15/test2/">test2 Hello World</a>
           </li>
         
       </ul>
@@ -246,9 +245,9 @@ Get Posts如果配置 posts_size: 0 则不">
     </div>
     <nav id="mobile-nav">
   
-    <a href="/ranger/antcloud-hexostatic/" class="mobile-nav-link">Home</a>
+    <a href="/antcloud-hexostatic/" class="mobile-nav-link">Home</a>
   
-    <a href="/ranger/antcloud-hexostatic/archives" class="mobile-nav-link">Archives</a>
+    <a href="/antcloud-hexostatic/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
     
@@ -256,11 +255,11 @@ Get Posts如果配置 posts_size: 0 则不">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/ranger/antcloud-hexostatic/fancybox/jquery.fancybox.css">
-  <script src="/ranger/antcloud-hexostatic/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="/antcloud-hexostatic/fancybox/jquery.fancybox.css">
+  <script src="/antcloud-hexostatic/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/ranger/antcloud-hexostatic/js/script.js"></script>
+<script src="/antcloud-hexostatic/js/script.js"></script>
 
   </div>
 </body>
