@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://rangeryu.github.io/antcloud-hexostatic"></form>
@@ -124,7 +124,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/03/26/api-guide/" data-id="cizsjy4kw0004cz2nn8n9bxda" class="article-share-link">Partager</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/03/26/api-guide/" data-id="cizsjy4kw0004cz2nn8n9bxda" class="article-share-link">Delen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li></ul>
@@ -136,141 +136,14 @@
 
 
   
-    <article id="post-mpaas-publish" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/antcloud-hexostatic/2017/02/15/mpaas-publish/" class="article-date">
-  <time datetime="2017-02-15T15:47:00.000Z" itemprop="datePublished">2017-02-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/antcloud-hexostatic/categories/lab/">lab</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/antcloud-hexostatic/2017/02/15/mpaas-publish/">公测发布：蚂蚁云mPaaS移动服务平台</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我们很高兴地同大家宣布，蚂蚁云的移动服务平台mPaaS正式公测了。作为蚂蚁金服平台化战略的重要组成部分，蚂蚁云把支付宝App十年的移动技术沉淀提炼为各种丰富的技术组件，通过mPaaS平台作为产品，以模块化的开发框架以及云服务对外开放，为App开发、测试、发布、监控及运营提供云到端的一站式解决方案，能有效降低技术门槛、减少研发成本、提升开发效率，希望能够帮助生态伙伴能快速高效的开发满足金融级需求的移动解决方案，使产品能更好地适应移动互联网的快速迭代。</p>
-<h2 id="产品概览：什么是mPaaS"><a href="#产品概览：什么是mPaaS" class="headerlink" title="产品概览：什么是mPaaS"></a>产品概览：什么是mPaaS</h2><p>支付宝App从当初只是承载转账、缴费、充值等服务的钱包App，逐步已经转变成承载日常金融生活、社交、口碑O2O、公益、第三方开放等服务的未来生活互动平台，客户端已经演进成一个足够开放、动态化的超级App应用架构，使支付宝App不仅能够由内部多个团队并行开发功能模块，也能使各个行业的第三方应用能够投放在支付宝上，同时满足了金融级性能、稳定和安全的需求。</p>
-<p>现在，mPaaS作为蚂蚁云的移动服务平台，对外开放的不只是支付宝App的开发框架和客户端组件，同时还有满足整个移动解决方案生命周期需求的开发工具和云服务组件。自从施行平台开放化战略以来，除支付宝App之外，蚂蚁聚宝、网商银行、天弘基金等蚂蚁金服旗下的多个App已经采用了mPaaS平台。现在我们把mPaaS平台正式公测开放，使生态伙伴、ISV及移动开发者能够快速达到跟支付宝App对等的客户端以及服务端的能力。</p>
-<ul>
-<li>模块化高效开发体验  </li>
-</ul>
-<p>工程化的开发框架可以自动生成初始化代码，框架还提供模块化开发模式，适用于多人协作开发，加上丰富的组件，能够让开发者搭积木似的的快速搭建自己的App。</p>
-<ul>
-<li>支付宝黑科技  </li>
-</ul>
-<p>开发了很多源于支付宝的黑科技，比如热修复功能不需要发版，就可以动态修复native代码中的问题。作为支付宝技术背后的移动引擎，拥有金融级性能、稳定和安全特性。 </p>
-<ul>
-<li>性能优化  </li>
-</ul>
-<p>所有功能组件都经历了支付宝App高并发，大流量的检验，并能够兼容复杂的客户端，对弱网，电量都有深度的优化。自带的UC浏览器内核，极大的提高H5页面的加载速度，并能够在特殊情况下自动fallback到系统自带的H5容器。</p>
-<ul>
-<li>丰富的组件  </li>
-</ul>
-<p>作为覆盖全生命周期的移动应用解决方案，直接把支付宝中使用的众多组件开放出来，并简化了接入流程，让大家能够快速搭建高质量的App。已开放的组件包括，埋点，闪退，热修复，推送，网关等。</p>
-<ul>
-<li>完善的工具支持      </li>
-</ul>
-<p>提供IDE插件，集成了框架工程管理的功能，并提供构建打包，加密等丰富的工具支持，让开发者专注写代码。</p>
-<ul>
-<li>功能一体化  </li>
-</ul>
-<p>框架与组件并没有强依赖，可分可合，灵活机动。各组件可以独立的提供强大的功能，也可以互相配合优化使用体验，发挥更大的作用</p>
-<h2 id="mPaaS平台能力："><a href="#mPaaS平台能力：" class="headerlink" title="mPaaS平台能力："></a>mPaaS平台能力：</h2><p>mPaaS采用模块化的架构，提供丰富的服务组件，实现搭积木式构建应用系统；建立高效快速的通道和统一的接入网关，实现轻量快捷的接入及实时可靠的推送；提供云到端的整套安全机制，极大降低安全风险；提供全面的监控体系及动态热修复能力，快速解决线上问题；提供研发到运维全生命周期的支撑服务。</p>
-<ul>
-<li>Android &amp; iOS 开发框架  </li>
-</ul>
-<p>全插件式开发框架，使开发团队基于同一标准，为应用并行开发多个业务模块。各个业务应用能够做到高度独立，低耦合，可拆可组合。提供了丰富的UI控件、统一存储、H5容器、社交分享、扫码、设备标识等组件，低成本高效率按需构建移动应用。</p>
-<pre><code>- 集成了蚂蚁金服多年在无线应用开发领域积累地UI组件和规范，能够快速实施出高客户体验的无线应用；
-- H5容器支持使用Web前端技术开发应用模块，动态发布内容服务，快速适配不同平台； 
-- 拥有丰富的应用组件，例如支付宝支付组件、社交分享、本地缓存、扫码、设备信息、配置服务、人脸、证件、定位等，应用创新变得非常简单； 
-</code></pre><ul>
-<li>移动网关  </li>
-</ul>
-<p>根据网关接口定义，自动生成客户端接口，并抽象了网络层的协议，开发者可以像调用本地方法一样直接调用网关接口，而无需管理网络连接等。网关服务还提供签名验证，限流等功能，满足不同业务需求.</p>
-<p>通过网关简单、安全、高效地统一管理客户端对服务端的各种请求。实现服务注册发现、路由管控、安全校验、流量监控等能力；对各种网络连接做了深度优化，确保在弱网条件下也能够保持连接，提高通讯效率；</p>
-<ul>
-<li>推送服务  </li>
-</ul>
-<p>由支付宝App秒级亿笔实践验证的移动消息推送方案，可建立设备与登录用户的对应关系，支持发送消息到设备或用户，通过各种维度精准推送个性化信息，有效提升用户留存率、活跃度和用户体验。集成推送数据统计服务，更智能的分析消息送达率，打开率等指标，量化推送效果。</p>
-<ul>
-<li>行为分析  </li>
-</ul>
-<p>通过分析客户端埋点日志，从用户操作行为数据、闪退、异常、终端问题、流量、电量、通讯链路、性能等多个目标的分析角度收集、展现和分析移动应用的使用数据。</p>
-<p>以移动分析为核心，通过用户行为分析帮助业务人员了解App使用情况，利用使用数据进行产品、运营、推广的决策和精准营销，帮助研发人员通过诊断日志报告及时发现和定位问题、灰度发布和权限管控。</p>
-<ul>
-<li>闪退分析  </li>
-</ul>
-<p>实时汇报闪退量跟闪退率，并根据发生闪退的函数名对闪退进行分类，方便评估各个闪退的影响。而且能够提供发生闪退时的运行环境，帮助开发者快速定位问题</p>
-<ul>
-<li>热修复</li>
-</ul>
-<p>在不重新发布的前提下热修复线上Bug，更新业务模块，并提供热修复包管理，灰度发布，回滚等机制帮助开发者安全，高效的修复线上问题。</p>
-<ul>
-<li>发布版本</li>
-</ul>
-<p>Android支持直接上传发布包进行灰度或正式发布，iOS可通过上传企业版本做灰度发布，iOS正式包上传到AppStore后，提醒用户下载安装。</p>
-<h3 id="mPaaS技术架构"><a href="#mPaaS技术架构" class="headerlink" title="mPaaS技术架构"></a>mPaaS技术架构</h3><p><img src="https://zos.alipayobjects.com/rmsportal/aUXCkOhcsjStfKqEUJtr.png" alt="mPaaS技术架构"></p>
-<h2 id="应用案例：网商银行App"><a href="#应用案例：网商银行App" class="headerlink" title="应用案例：网商银行App"></a>应用案例：网商银行App</h2><blockquote>
-<p><a href="https://www.mybank.cn/" target="_blank" rel="external">网商银行</a> </p>
-</blockquote>
-<p><img src="https://os.alipayobjects.com/rmsportal/rsIfqqRrbmvgxyw.png" alt="alt"></p>
-<p>金融行业的移动信息化需要解决的四大类问题：开发方面，该怎么进行技术选型，怎么降低开发成本、提高开发效率；整合方面，如何对接原有的业务系统，如何整合业务逻辑，存储来自移动设备和场景的业务数据；管理方面，如何对应用进行统一管理，根据用户群体和设备群体按需进行应用升级和模块更新；安全方面，需要有一个应用统一的接入的标准，包括保障数据安全和应用的安全等等。</p>
-<p>安全性和稳定性是金融服务内在必备品质，在拓展各个场景时，网商银行提供的金融功能需要具备“端•管•云”协同的多层次、全覆盖的安全防护能力：</p>
-<ul>
-<li><p>强化场景入口的安全性。通过mPaas提供的标准终端SDK，采集场景入口的主要终端设备数据、环境数据和操作数据，以及网商银行特有的入口设备指纹、代理检测、环境上下文分析等模型，进行场景入口环境的联防联控。</p>
-</li>
-<li><p>在服务端安全方面，网商银行使用蚂蚁云上特有的安全管理中心，集监管合规、基础安全、安全运营和安全技术审计为一体，能有效抵御针对服务及应用的恶意攻击及入侵。</p>
-</li>
-</ul>
-<p>网商银行利用移动云的灵动性，正在快速地把金融服务植入到更多场景中，让金融服务智能的出现在客户需要的地方，实现金融无线场景化。</p>
-<h2 id="产品价格"><a href="#产品价格" class="headerlink" title="产品价格"></a>产品价格</h2><p>2017.1.11 - 2017.3.31，公测期间，<strong>免费</strong> ！</p>
-<h2 id="了解更多"><a href="#了解更多" class="headerlink" title="了解更多"></a>了解更多</h2><p>我们正尝试把完整的从云到端的支付宝移动能力开放给生态伙伴，但是产品化的过程是富有挑战性的，产品团队正在紧锣密鼓地完善mPaaS的开发者体验，同时也有重量级的产品特性正在开发中。后续我们将会继续通过文章、视频等形式，向大家介绍移动以及其他蚂蚁云产品的发展历程、特性和最佳实践。</p>
-<p>如果您希望了解更多内容，可以点击产品主页和文档中心：</p>
-<blockquote>
-<p><a href="https://www.cloud.alipay.com/" target="_blank" rel="external">蚂蚁云</a><br><a href="https://www.cloud.alipay.com/products/MPAAS" target="_blank" rel="external">mPaaS</a></p>
-</blockquote>
-<p>试用申请、体验反馈，同产品团队保持联系：</p>
-<blockquote>
-<p>业务咨询：fincloud@cloud.alipay.com<br>技术咨询：techsupport@cloud.alipay.com</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/mpaas-publish/" data-id="cizsjy4ls000gcz2n3y7ukuli" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/mpaas/">mpaas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/公告/">公告</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-mpaas-history" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/antcloud-hexostatic/2017/02/15/mpaas-history/" class="article-date">
-  <time datetime="2017-02-15T15:46:04.000Z" itemprop="datePublished">2017-02-15</time>
+    <a href="/antcloud-hexostatic/2017/02/06/mpaas-history/" class="article-date">
+  <time datetime="2017-02-06T03:00:00.000Z" itemprop="datePublished">2017-02-06</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/antcloud-hexostatic/categories/lab/">lab</a>
+    <a class="article-category-link" href="/antcloud-hexostatic/categories/焦点动态/">焦点动态</a>
   </div>
 
   </div>
@@ -281,7 +154,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/antcloud-hexostatic/2017/02/15/mpaas-history/">让移动创新更灵动 - 蚂蚁云mPaaS移动平台在支付宝App的演进和实践</a>
+      <a class="article-title" href="/antcloud-hexostatic/2017/02/06/mpaas-history/">蚂蚁云mPaaS移动平台在支付宝App的演进和实践</a>
     </h1>
   
 
@@ -292,16 +165,63 @@
         在支付宝业务重心全情投入无线移动平台的这四年多以来，支付宝移动App的用户和日活的数量每年都在成倍增长，对应的研发团队人数也扩张了十几倍，支付宝功能和业务也在不断推陈出新，支付宝App本身承载的功能模块使其已经演化成了一个移动互联网时代的超级App。蚂蚁云mPaaS移动平台来源于支付宝移动技术十年的技术积累和沉淀，是把客户端、服务端和网络技术开放出来的产品化框架和平台。蚂蚁金服旗下的智慧理财平台蚂蚁聚宝、网商银行、天弘爱理财等金融级移动App都已经应用了同一套框架和移动云平台。
         
           <p class="article-more-link">
-            <a href="/antcloud-hexostatic/2017/02/15/mpaas-history/#more">Read More</a>
+            <a href="/antcloud-hexostatic/2017/02/06/mpaas-history/#more">Read More</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/15/mpaas-history/" data-id="cizsjy4lj000ccz2ny2gnmsbj" class="article-share-link">Partager</a>
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/02/06/mpaas-history/" data-id="cizsjy4lj000ccz2ny2gnmsbj" class="article-share-link">Delen</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/mpaas/">mpaas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/演进/">演进</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/焦点动态Updates/">焦点动态Updates</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/移动平台Mobile/">移动平台Mobile</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-mpaas-publish" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/antcloud-hexostatic/2017/01/11/mpaas-publish/" class="article-date">
+  <time datetime="2017-01-11T03:00:00.000Z" itemprop="datePublished">2017-01-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/antcloud-hexostatic/categories/产品更新/">产品更新</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/antcloud-hexostatic/2017/01/11/mpaas-publish/">公测：蚂蚁云mPaaS移动平台</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        我们很高兴地同大家宣布，蚂蚁云的移动服务平台mPaaS正式公测了。作为蚂蚁金服平台化战略的重要组成部分，蚂蚁云把支付宝App十年的移动技术沉淀提炼为各种丰富的技术组件，通过mPaaS平台作为产品，以模块化的开发框架以及云服务对外开放，为App开发、测试、发布、监控及运营提供云到端的一站式解决方案，能有效降低技术门槛、减少研发成本、提升开发效率，希望能够帮助生态伙伴能快速高效的开发满足金融级需求的移动解决方案，使产品能更好地适应移动互联网的快速迭代。
+        
+          <p class="article-more-link">
+            <a href="/antcloud-hexostatic/2017/01/11/mpaas-publish/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017/01/11/mpaas-publish/" data-id="cizsjy4ls000gcz2n3y7ukuli" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/产品更新Annoucements/">产品更新Annoucements</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/移动平台Mobile/">移动平台Mobile</a></li></ul>
 
     </footer>
   </div>
@@ -317,9 +237,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Catégories</h3>
+    <h3 class="widget-title">Categorieën</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/lab/">lab</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/lab/">lab</a></li><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/产品更新/">产品更新</a></li><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/焦点动态/">焦点动态</a></li></ul>
     </div>
   </div>
 
@@ -327,9 +247,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
+    <h3 class="widget-title">Labels</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/mpaas/">mpaas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/公告/">公告</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/演进/">演进</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/hello-world/">hello world</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/产品更新Annoucements/">产品更新Annoucements</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/焦点动态Updates/">焦点动态Updates</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/移动平台Mobile/">移动平台Mobile</a></li></ul>
     </div>
   </div>
 
@@ -337,18 +257,18 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/antcloud-hexostatic/tags/hello-world/" style="font-size: 10px;">hello world</a> <a href="/antcloud-hexostatic/tags/mpaas/" style="font-size: 20px;">mpaas</a> <a href="/antcloud-hexostatic/tags/公告/" style="font-size: 10px;">公告</a> <a href="/antcloud-hexostatic/tags/演进/" style="font-size: 10px;">演进</a>
+      <a href="/antcloud-hexostatic/tags/hello-world/" style="font-size: 10px;">hello world</a> <a href="/antcloud-hexostatic/tags/产品更新Annoucements/" style="font-size: 10px;">产品更新Annoucements</a> <a href="/antcloud-hexostatic/tags/焦点动态Updates/" style="font-size: 10px;">焦点动态Updates</a> <a href="/antcloud-hexostatic/tags/移动平台Mobile/" style="font-size: 20px;">移动平台Mobile</a>
     </div>
   </div>
 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/02/">February 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/01/">January 2017</a></li></ul>
     </div>
   </div>
 
@@ -356,7 +276,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
@@ -365,11 +285,11 @@
           </li>
         
           <li>
-            <a href="/antcloud-hexostatic/2017/02/15/mpaas-publish/">公测发布：蚂蚁云mPaaS移动服务平台</a>
+            <a href="/antcloud-hexostatic/2017/02/06/mpaas-history/">蚂蚁云mPaaS移动平台在支付宝App的演进和实践</a>
           </li>
         
           <li>
-            <a href="/antcloud-hexostatic/2017/02/15/mpaas-history/">让移动创新更灵动 - 蚂蚁云mPaaS移动平台在支付宝App的演进和实践</a>
+            <a href="/antcloud-hexostatic/2017/01/11/mpaas-publish/">公测：蚂蚁云mPaaS移动平台</a>
           </li>
         
       </ul>
@@ -385,7 +305,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Ranger Yu<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
