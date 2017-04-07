@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>2017深圳云栖TechInsight活动回顾：动手实验室-从零搭建一个金融级分布式交易系统 | Ant Cloud Blog Staging</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这是蚂蚁云平台第一次面向开发者的体验活动，使蚂蚁金服的核心金融技术和产品变得触手可及。旨在通过动手实验室，围绕分布式数据库OceanBase、蚂蚁分布式中间件、移动平台mPaaS、零号云客服等产品，实现一个金融场景下移动转账交易的示例解决方案。我们为此构建了一套完整的示例项目和实验手册，涵盖从关键组件说明、应用开发到部署的全方位体验流程。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2017深圳云栖TechInsight活动回顾：动手实验室-从零搭建一个金融级分布式交易系统">
+<meta property="og:url" content="https://rangeryu.github.io/antcloud-hexostatic/2017-04-techinsight-workshop/index.html">
+<meta property="og:site_name" content="Ant Cloud Blog Staging">
+<meta property="og:description" content="这是蚂蚁云平台第一次面向开发者的体验活动，使蚂蚁金服的核心金融技术和产品变得触手可及。旨在通过动手实验室，围绕分布式数据库OceanBase、蚂蚁分布式中间件、移动平台mPaaS、零号云客服等产品，实现一个金融场景下移动转账交易的示例解决方案。我们为此构建了一套完整的示例项目和实验手册，涵盖从关键组件说明、应用开发到部署的全方位体验流程。">
+<meta property="og:image" content="https://private-alipayobjects.alipay.com/alipay-rmsdeploy-image/skylark/attach/568/b7b45bbf507c83ca5238af2744fdd07d">
+<meta property="og:updated_time" content="2017-04-07T03:41:51.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2017深圳云栖TechInsight活动回顾：动手实验室-从零搭建一个金融级分布式交易系统">
+<meta name="twitter:description" content="这是蚂蚁云平台第一次面向开发者的体验活动，使蚂蚁金服的核心金融技术和产品变得触手可及。旨在通过动手实验室，围绕分布式数据库OceanBase、蚂蚁分布式中间件、移动平台mPaaS、零号云客服等产品，实现一个金融场景下移动转账交易的示例解决方案。我们为此构建了一套完整的示例项目和实验手册，涵盖从关键组件说明、应用开发到部署的全方位体验流程。">
+<meta name="twitter:image" content="https://private-alipayobjects.alipay.com/alipay-rmsdeploy-image/skylark/attach/568/b7b45bbf507c83ca5238af2744fdd07d">
+  
+    <link rel="alternate" href="/atom.xml" title="Ant Cloud Blog Staging" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/antcloud-hexostatic/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/antcloud-hexostatic/" id="logo">Ant Cloud Blog Staging</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/antcloud-hexostatic/" id="subtitle">Proof Of Concept</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/antcloud-hexostatic/">Home</a>
+        
+          <a class="main-nav-link" href="/antcloud-hexostatic/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://rangeryu.github.io/antcloud-hexostatic"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2017-04-techinsight-workshop" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/antcloud-hexostatic/2017-04-techinsight-workshop/" class="article-date">
+  <time datetime="2017-04-07T16:00:00.000Z" itemprop="datePublished">2017-04-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/antcloud-hexostatic/categories/焦点动态/">焦点动态</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      2017深圳云栖TechInsight活动回顾：动手实验室-从零搭建一个金融级分布式交易系统
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这是蚂蚁云平台第一次面向开发者的体验活动，使蚂蚁金服的核心金融技术和产品变得触手可及。旨在通过动手实验室，围绕分布式数据库OceanBase、蚂蚁分布式中间件、移动平台mPaaS、零号云客服等产品，实现一个金融场景下移动转账交易的示例解决方案。我们为此构建了一套完整的示例项目和实验手册，涵盖从关键组件说明、应用开发到部署的全方位体验流程。在TechInsight的第一天下午，通过讲师对知识点的互动分享和代码实现实操演示，使开发者能够直观地体验到相关云产品的快速入门和最佳实践。</p>
+<h2 id="Workshop课程回顾"><a href="#Workshop课程回顾" class="headerlink" title="Workshop课程回顾"></a>Workshop课程回顾</h2><h3 id="1-OceanBase运维管理后台体验"><a href="#1-OceanBase运维管理后台体验" class="headerlink" title="1. OceanBase运维管理后台体验"></a>1. OceanBase运维管理后台体验</h3><blockquote>
+<p>李凌云(云琚) &amp; 俞仁杰(首仁)</p>
+</blockquote>
+<p>「<a href="https://www.cloud.alipay.com/products/OB" target="_blank" rel="external">云数据库 OceanBase</a>」- 演示和体验分布式云数据库OceanBase的运维和数据管理操作；</p>
+<h3 id="2-通过蚂蚁分布式中间件构建金融级微服务"><a href="#2-通过蚂蚁分布式中间件构建金融级微服务" class="headerlink" title="2. 通过蚂蚁分布式中间件构建金融级微服务"></a>2. 通过蚂蚁分布式中间件构建金融级微服务</h3><blockquote>
+<p>许文奇 &amp; 俞仁杰(首仁)</p>
+</blockquote>
+<p>「<a href="https://www.cloud.alipay.com/products/DMS" target="_blank" rel="external">分布式消息服务</a>」、「<a href="https://www.cloud.alipay.com/products/DDS" target="_blank" rel="external">分布式数据源服务</a>」、「<a href="https://www.cloud.alipay.com/products/DTS" target="_blank" rel="external">分布式事务服务</a>」等蚂蚁分布式中间件和SOFA Lite 2 框架 – 实现微服务化云端部署、核心数据分库分表，提供查看账户信息、转账等用户请求操作并保证金融级一致性；</p>
+<h3 id="3-基于蚂蚁mPaaS移动平台构建原生应用"><a href="#3-基于蚂蚁mPaaS移动平台构建原生应用" class="headerlink" title="3. 基于蚂蚁mPaaS移动平台构建原生应用"></a>3. 基于蚂蚁mPaaS移动平台构建原生应用</h3><blockquote>
+<p>祁晓龙(哓龙) &amp; 杨薇(禾兮)</p>
+</blockquote>
+<p>「<a href="https://www.cloud.alipay.com/products/MPAAS" target="_blank" rel="external">移动开发平台 mPaaS</a>」通过蚂蚁金服mPaaS一站式解决方案，创建iOS &amp; Android 原生App，通过移动网关调用REST API，完成相关操作实现基本转账和查询余额功能，体验源自支付宝十多年移动积累的丰富移动组件和云端服务黑科技；</p>
+<h3 id="4-蚂蚁云客服知识库和智能机器人的配置创建"><a href="#4-蚂蚁云客服知识库和智能机器人的配置创建" class="headerlink" title="4. 蚂蚁云客服知识库和智能机器人的配置创建"></a>4. 蚂蚁云客服知识库和智能机器人的配置创建</h3><blockquote>
+<p>张凯尧(大伢) &amp; 俞仁杰(首仁)</p>
+</blockquote>
+<p>「<a href="https://www.cloud.alipay.com/products/CSC" target="_blank" rel="external">零号云客服</a>」体验从创建知识库到配置智能机器人，构建能够学习和回答客户的业务咨询问题、响应账户操作指令的智能客服。</p>
+<h2 id="讲义分享"><a href="#讲义分享" class="headerlink" title="讲义分享"></a>讲义分享</h2><p>PDF（80页）下载：<a href="http://antcloudshare.oss-cn-hangzhou.aliyuncs.com/TI201703/AntCloud-Workshop.pdf" target="_blank" rel="external">http://antcloudshare.oss-cn-hangzhou.aliyuncs.com/TI201703/AntCloud-Workshop.pdf</a></p>
+<h2 id="项目Git-Repo："><a href="#项目Git-Repo：" class="headerlink" title="项目Git Repo："></a>项目Git Repo：</h2><ul>
+<li><a href="https://git.cloud.alipay.com/dx/AntCloudPayPublic" target="_blank" rel="external">https://git.cloud.alipay.com/dx/AntCloudPayPublic</a></li>
+<li>包含详细支持文档、实验手册、讲义大纲，示例项目代码当前只对蚂蚁云用户开放，如有兴趣烦请提交体验申请。</li>
+</ul>
+<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>请花两分钟填写<a href="http://tb.cn/FIo8Ayw" target="_blank" rel="external">体验调研问卷: http://tb.cn/FIo8Ayw</a>，我们的业务架构师会第一时间同您联系。</p>
+<p>钉钉群二维码：  </p>
+<p><img src="https://private-alipayobjects.alipay.com/alipay-rmsdeploy-image/skylark/attach/568/b7b45bbf507c83ca5238af2744fdd07d" alt="DingdingGroupQRCode"> </p>
+<hr>
+<h2 id="附录：Workshop项目概述-从零搭建一个基于蚂蚁云的金融级分布式交易系统"><a href="#附录：Workshop项目概述-从零搭建一个基于蚂蚁云的金融级分布式交易系统" class="headerlink" title="附录：Workshop项目概述 - 从零搭建一个基于蚂蚁云的金融级分布式交易系统"></a>附录：Workshop项目概述 - 从零搭建一个基于蚂蚁云的金融级分布式交易系统</h2><p>Git Repo: <a href="https://git.cloud.alipay.com/dx/AntCloudPayPublic" target="_blank" rel="external">https://git.cloud.alipay.com/dx/AntCloudPayPublic</a></p>
+<p>包含详细支持文档、实验手册、讲义大纲，示例项目代码当前只对蚂蚁云用户开放，如有兴趣烦请提交体验申请。</p>
+<h2 id="1-项目概况"><a href="#1-项目概况" class="headerlink" title="1. 项目概况"></a>1. 项目概况</h2><p>蚂蚁金服的核心金融技术和产品已经触手可及！通过动手实验室，基于分布式数据库OceanBase、蚂蚁分布式中间件、移动平台mPaaS、零号云客服等产品进行开发和部署体验，实现一个金融场景下移动转账交易的示例解决方案。</p>
+<ol>
+<li>「<a href="https://www.cloud.alipay.com/products/OB" target="_blank" rel="external">云数据库 OceanBase</a>」- 基于OceanBase，演示和体验云端数据库运维和数据管理操作；</li>
+<li>服务端基于蚂蚁SOFA Lite 2 + Spring Boot框架，通过<a href="https://www.cloud.alipay.com/products/DMS" target="_blank" rel="external">分布式消息服务</a>、<a href="https://www.cloud.alipay.com/products/DDS" target="_blank" rel="external">分布式数据源服务</a>等蚂蚁分布式中间件，实现微服务化云端部署、核心数据分库分表，提供查看账户信息、转账等用户请求操作并保证金融级一致性；</li>
+<li>「<a href="https://www.cloud.alipay.com/products/MPAAS" target="_blank" rel="external">移动开发平台 mPaaS</a>]」通过支付宝mPaaS一站式解决方案，创建iOS &amp; Android 原生App，通过移动网关调用REST API，完成相关操作实现基本转账和查询余额功能，体验源自支付宝十多年移动积累的丰富移动组件和黑科技；</li>
+<li>「<a href="https://www.cloud.alipay.com/products/CSC" target="_blank" rel="external">零号云客服</a>」体验从创建知识库到配置智能客服机器人，使云客服能够学习和回答客户的业务咨询问题，响应账户操作指令。</li>
+</ol>
+<p>本项目通过示例代码和必要的文档指引，使开发者能够直观地体验到相关云产品的快速入门和最佳实践。</p>
+<h3 id="协作指南"><a href="#协作指南" class="headerlink" title="协作指南"></a>协作指南</h3><p>本项目长期更新维护，将逐步融入蚂蚁云的更多关键组件的演示和最佳实践，提升开发者学习上手体验。如需帮助请在Issues中提出，同时也希望开发者在实际操作Demo的过程中能够及时给予反馈，提升产品使用及开发体验是我们永远的目标。</p>
+<p>欢迎通过Pull Request共同协作构建。</p>
+<h2 id="2-项目指南"><a href="#2-项目指南" class="headerlink" title="2. 项目指南:"></a>2. 项目指南:</h2><h3 id="2-1-了解蚂蚁云"><a href="#2-1-了解蚂蚁云" class="headerlink" title="2.1 了解蚂蚁云"></a>2.1 了解蚂蚁云</h3><ul>
+<li>主页入口：<a href="https://www.cloud.alipay.com/" target="_blank" rel="external">https://www.cloud.alipay.com/</a><ul>
+<li><a href="https://www.cloud.alipay.com/docs" target="_blank" rel="external">帮助与文档</a></li>
+<li><a href="https://www.cloud.alipay.com/press/list" target="_blank" rel="external">博客</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="https://auth.cloud.alipay.com/#/cloudauth/guide" target="_blank" rel="external">加入蚂蚁金融云流程</a>，亦可联系解决方案团队邮箱：<ul>
+<li>业务咨询:<a href="mailto:fincloud@cloud.alipay.com" target="_blank" rel="external">fincloud@cloud.alipay.com</a></li>
+<li>技术咨询:<a href="mailto:techsupport@cloud.alipay.com" target="_blank" rel="external">techsupport@cloud.alipay.com</a></li>
+<li>体验申请:<a href="http://tb.cn/FIo8Ayw" target="_blank" rel="external">调研问卷</a></li>
+</ul>
+</li>
+</ul>
+<p>蚂蚁金服致力于将金融技术能力开放给合作伙伴，共同推进更平等、普惠的新金融服务体系。作为技术赋能输出平台，蚂蚁金服的云服务已面向受邀企业客户开放。欢迎申请开通体验和技术咨询。</p>
+<p>蚂蚁云的基础资源服务构建于阿里金融云，许多阿里云上的基础资源类产品如OSS、ECS、RDS等，用户能通过相同的控制台获得统一的运维管理操作体验。在此之上，云上的大部分服务来自蚂蚁金服多年金融技术实践沉淀并产品化的成果，如蚂蚁中间件、运维管理、移动平台及智能客服等产品，以PaaS和SaaS等产品形式对外输出赋能生态。</p>
+<p>本动手实验中的OceanBase的就是一个蚂蚁和阿里云“合璧”的例子，实例管理及数据管理控制台的入口可以来自于阿里云控制台，也可以从蚂蚁云控制台进入，两者提供相同的功能和用户体验。</p>
+<h3 id="2-2-本项目文件夹结构"><a href="#2-2-本项目文件夹结构" class="headerlink" title="2.2 本项目文件夹结构"></a>2.2 本项目文件夹结构</h3><p><code>/docs</code>目录下为实验手册和项目详细说明文档，包含实验概览和操作手册。对于中间件和移动，还有较为详细的分步组件说明。</p>
+<p><code>/src</code>目录下为Demo应用的源代码，中间件由三个微服务应用组成，还有一个临时应用提供测试用API。</p>
+<p>建议通过文档手册对逐个产品了解学习，辅以示例代码跑通整个流程。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── README.md           项目说明入口</div><div class="line">├── CONTRIBUTING.md     项目协作指南</div><div class="line">├── docs                文档手册</div><div class="line">│   ├── CloudCxSvc      「零号云客服」</div><div class="line">│   │   ├── manual.md       操作手册</div><div class="line">│   │   └── readme.md       实验概览</div><div class="line">│   ├── Database        「Oceanbase数据库」</div><div class="line">│   │   ├── manual.md       操作手册</div><div class="line">│   │   ├── readme.md       实验概览</div><div class="line">│   │   └── slides.md       课程提纲</div><div class="line">│   ├── Middleware      「蚂蚁中间件」</div><div class="line">│   │   ├── deploy.md       部署说明</div><div class="line">│   │   ├── develop.xxx.md  开发说明（系列文章）</div><div class="line">│   │   ├── readme.md       实验概览</div><div class="line">│   │   ├── setup.md        环境配置</div><div class="line">│   │   └── slides.md       课程提纲</div><div class="line">│   └── Mobile          「mPaaS移动平台」</div><div class="line">│       ├── deploy.md       部署说明</div><div class="line">│       ├── develop.md      开发说明</div><div class="line">│       ├── readme.md       实验概览</div><div class="line">│       └── setup.md        环境配置</div><div class="line">└── src                 Demo项目源代码</div><div class="line">    ├── Middleware      「蚂蚁中间件」</div><div class="line">    │   ├── bizlogic        业务处理中心</div><div class="line">    │   ├── fcaccount       账务处理中心</div><div class="line">    │   ├── usercenter      用户中心</div><div class="line">    │   └── mocksvr-rest    临时MockAPI项目</div><div class="line">    └── Mobile          「mPaaS移动平台」</div><div class="line">        ├── iOSApp          iOS应用</div><div class="line">        └── androidApp      android应用</div></pre></td></tr></table></figure>
+<h2 id="3-实验场景"><a href="#3-实验场景" class="headerlink" title="3. 实验场景"></a>3. 实验场景</h2><p>本动手实验包含四个场景，可以独立进行，也能顺序依次进行。</p>
+<ol>
+<li>Git Clone或打包下载本实验内容至本地。</li>
+<li>请参考/docs/*/目录下各部分文档。入口以readme.md为主，slides.md是ppt的结构大纲内容，可作为培训和演示大纲。</li>
+<li>根据实验手册的引导，了解和体验各模块部分的构建过程，包括环境搭建、模块开发及运维部署等。</li>
+<li>申请开通云服务账户 - <a href="https://auth.cloud.alipay.com/#/cloudauth/guide" target="_blank" rel="external">加入蚂蚁金融云流程</a></li>
+<li>编译并发布至云上测试环境。</li>
+</ol>
+<hr>
+<h3 id="场景1：创建和管理金融级分布式数据库服务OceanBase"><a href="#场景1：创建和管理金融级分布式数据库服务OceanBase" class="headerlink" title="场景1：创建和管理金融级分布式数据库服务OceanBase"></a>场景1：创建和管理金融级分布式数据库服务OceanBase</h3><blockquote>
+<p>OceanBase云服务已面向受邀企业客户开放。欢迎申请开通体验和技术咨询。<br>产品负责人：「苏普」<a href="mailto:supu@alibaba-inc.com" target="_blank" rel="external">supu@alibaba-inc.com</a></p>
+</blockquote>
+<h4 id="核心演示场景和技术点"><a href="#核心演示场景和技术点" class="headerlink" title="核心演示场景和技术点"></a>核心演示场景和技术点</h4><ul>
+<li>OceanBase分布式数据库入门，介绍产品特性、历史演进、适用场景。</li>
+<li>OB开发必备基础。日常开发、运维的关键注意点，mysql的兼容性，相关云平台的数据中间件等。</li>
+<li>场景演示和解析<ul>
+<li>管理后台体验，包括实例运维操作以及数据管理DMS控制台操作</li>
+<li>OB基本演示，包括数据分布，机器分布，事务支持等基本信息演示</li>
+<li>OB多租户演示，包括多租户，资源动态调整演示</li>
+<li>转账分区表演示，包含分布表分布，执行计划展示等</li>
+</ul>
+</li>
+</ul>
+<h4 id="相关资源"><a href="#相关资源" class="headerlink" title="相关资源"></a>相关资源</h4><p>产品页面： </p>
+<ul>
+<li><a href="https://www.aliyun.com/product/oceanbase" target="_blank" rel="external">云数据库 OceanBase：阿里云</a></li>
+<li><a href="https://www.cloud.alipay.com/products/OB" target="_blank" rel="external">云数据库 OceanBase：蚂蚁云</a></li>
+</ul>
+<hr>
+<h3 id="场景2：通过蚂蚁分布式中间件构建金融级微服务"><a href="#场景2：通过蚂蚁分布式中间件构建金融级微服务" class="headerlink" title="场景2：通过蚂蚁分布式中间件构建金融级微服务"></a>场景2：通过蚂蚁分布式中间件构建金融级微服务</h3><blockquote>
+<p>蚂蚁分布式中间件服务已面向受邀企业客户开放。欢迎申请开通体验和技术咨询。<br>产品负责人：「许文奇」<a href="mailto:wenqi.xuwq@antfin.com" target="_blank" rel="external">wenqi.xuwq@antfin.com</a></p>
+</blockquote>
+<h4 id="核心演示场景和技术点-1"><a href="#核心演示场景和技术点-1" class="headerlink" title="核心演示场景和技术点"></a>核心演示场景和技术点</h4><ul>
+<li><a href="https://www.cloud.alipay.com/docs/content/AntCloud/48592" target="_blank" rel="external">SOFA Lite 2</a> - 蚂蚁金服基于 SpringBoot的中间件轻量集成方案，与标准的 SpringBoot 工程无缝集成，提供了易用、统一的编程界面.</li>
+<li><a href="https://www.cloud.alipay.com/docs/content/AntCloud/46876" target="_blank" rel="external">SOFA REST</a> - 对外提供RESTful API。本例中「用户中心」和「业务处理中心」对外暴露API接口供客户端调用。</li>
+<li><a href="https://www.cloud.alipay.com/docs/content/AntCloud/46815" target="_blank" rel="external">SOFA RPC</a> - 提供点对点服务调用。本例中「用户中心」和「业务处理中心」用来同后端「账务中心」通讯的主要方式。</li>
+<li><a href="https://www.cloud.alipay.com/products/DMS-SHARED" target="_blank" rel="external">分布式消息服务 (DMS)</a> - 异步化移动消息推送请求。转账操作完成后需要调用移动平台的相关API发送通知。通过DMS能使相关操作异步化，减小阻塞。</li>
+<li><a href="https://www.cloud.alipay.com/products/DDS-SHARED" target="_blank" rel="external">分布式数据源 (DDS)</a> - 数据访问层的中间件。本例中我们演示了分库分表的使用场景。</li>
+<li><a href="https://www.cloud.alipay.com/products/DTS" target="_blank" rel="external">分布式事务服务 (DTS)</a> - 分布式事务框架，用来保障在大规模分布式环境下事务的最终一致性。在 DTS 内部，一个分布式事务的关联方分为发起方和参与者两类。在整个 Demo 中，业务处理中心接收用户的转账申请，然后调用账务中心的转账服务。这样业务处理中心就是 DTS 事务的发起方，而账务中心就是参与方。一笔转账业务涉及到两个账户，这两个账户分布在不同的数据库中，并且这两个账户的更新必须同时成功或同时失败。DTS 就是用来保证分布式事务最终一致性的。</li>
+<li><a href="https://www.cloud.alipay.com/products/DEPS" target="_blank" rel="external">发布部署服务 (DEPS)</a> - 承载整个应用和数据库的发布和部署。</li>
+</ul>
+<h4 id="相关资源-1"><a href="#相关资源-1" class="headerlink" title="相关资源"></a>相关资源</h4><p>产品页面： </p>
+<ul>
+<li><a href="https://www.cloud.alipay.com/products/DMS-SHARED" target="_blank" rel="external">分布式消息服务 (DMS)</a></li>
+<li><a href="https://www.cloud.alipay.com/products/DDS-SHARED" target="_blank" rel="external">分布式数据源 (DDS)</a></li>
+<li><a href="https://www.cloud.alipay.com/products/DTS" target="_blank" rel="external">分布式事务服务 (DTS)</a></li>
+<li><a href="https://www.cloud.alipay.com/products/DDCS" target="_blank" rel="external">分布式动态配置服务 (DDCS)</a></li>
+<li><a href="https://www.cloud.alipay.com/products/DSR" target="_blank" rel="external">分布式服务注册中心 (DSR)</a></li>
+<li><a href="https://www.cloud.alipay.com/products/DSS" target="_blank" rel="external">分布式调度服务 (DSS)</a></li>
+</ul>
+<hr>
+<h3 id="场景3：基于蚂蚁mPaaS移动平台构建原生应用"><a href="#场景3：基于蚂蚁mPaaS移动平台构建原生应用" class="headerlink" title="场景3：基于蚂蚁mPaaS移动平台构建原生应用"></a>场景3：基于蚂蚁mPaaS移动平台构建原生应用</h3><blockquote>
+<p>蚂蚁移动开发平台mPaaS已面向受邀企业客户开放。欢迎申请开通体验和技术咨询。<br>产品负责人：「方略」<a href="mailto:zl107021@antfin.com" target="_blank" rel="external">zl107021@antfin.com</a></p>
+</blockquote>
+<h4 id="核心演示场景和技术点-2"><a href="#核心演示场景和技术点-2" class="headerlink" title="核心演示场景和技术点"></a>核心演示场景和技术点</h4><h5 id="1-客户端开发"><a href="#1-客户端开发" class="headerlink" title="1. 客户端开发"></a>1. 客户端开发</h5><ul>
+<li>基于mPaaS客户端框架和SDK快速构建多模块应用</li>
+<li>H5容器：「客服」页展现由「零号云客服」所提供的智能客服交互页面，用户可以尝试在此页面同机器人客服作基本问答互动。</li>
+</ul>
+<h5 id="2-服务端开发"><a href="#2-服务端开发" class="headerlink" title="2. 服务端开发"></a>2. 服务端开发</h5><ul>
+<li>基于移动网关服务，连接后端服务，实现移动转账场景中转账交易、查询余额和转账记录等操作；</li>
+<li>基于消息推送服务，转账成功后向对方推送消息通知，与用户保持互动；</li>
+</ul>
+<h5 id="3-发布"><a href="#3-发布" class="headerlink" title="3. 发布"></a>3. 发布</h5><ul>
+<li>基于实时发布服务，根据发布平台热修复配置，动态修改H5页面的展现逻辑，如H5的URL；</li>
+</ul>
+<h5 id="4-分析"><a href="#4-分析" class="headerlink" title="4. 分析"></a>4. 分析</h5><ul>
+<li>基于移动分析服务，通过客户端埋点数据统计和分析客户端用户行为和性能质量；</li>
+</ul>
+<h4 id="相关资源-2"><a href="#相关资源-2" class="headerlink" title="相关资源"></a>相关资源</h4><p>产品页面：</p>
+<ul>
+<li><a href="https://www.cloud.alipay.com/products/MPAAS" target="_blank" rel="external">移动开发平台 mPaaS</a></li>
+</ul>
+<hr>
+<h3 id="场景4：体验蚂蚁云企业级SaaS服务「零号云客服」"><a href="#场景4：体验蚂蚁云企业级SaaS服务「零号云客服」" class="headerlink" title="场景4：体验蚂蚁云企业级SaaS服务「零号云客服」"></a>场景4：体验蚂蚁云企业级SaaS服务「零号云客服」</h3><blockquote>
+<p>蚂蚁云企业级SaaS服务「零号云客服」已正式商用。欢迎开通体验和技术咨询。<br>产品负责人：「大伢」<a href="mailto:kaiyao.zky@antfin.com" target="_blank" rel="external">kaiyao.zky@antfin.com</a></p>
+</blockquote>
+<h4 id="核心演示场景和技术点-3"><a href="#核心演示场景和技术点-3" class="headerlink" title="核心演示场景和技术点"></a>核心演示场景和技术点</h4><p>「零号云客服」是一款SaaS智能客服产品，背后依托支付宝多年实践的大数据平台，凭借数据挖掘，搜索，语音转文本，自然语音处理，机器学习等前沿技术，打造一套完整的智能服务体系。这节动手实验室将围绕「快速搭建在线服务」来通过几个典型场景，进行零号云客服的实操演示和体验。</p>
+<ul>
+<li>蚂蚁智能客服产品介绍和应用场景</li>
+<li>创建在线技能组&amp;客服等级</li>
+<li>创建客服</li>
+<li>构建知识库</li>
+<li>配置聊天机器机器人</li>
+<li>创建聊天窗和应用集成</li>
+</ul>
+<h4 id="相关资源-3"><a href="#相关资源-3" class="headerlink" title="相关资源"></a>相关资源</h4><ul>
+<li><a href="https://www.cloud.alipay.com/products/CSC" target="_blank" rel="external">零号云客服</a></li>
+<li><a href="https://www.cloud.alipay.com/docs/content/AntCloud/48397" target="_blank" rel="external">技术文档</a></li>
+</ul>
+<hr>
+<h2 id="了解更多"><a href="#了解更多" class="headerlink" title="了解更多"></a>了解更多</h2><ul>
+<li><p>主页入口：<a href="https://www.cloud.alipay.com/" target="_blank" rel="external">https://www.cloud.alipay.com/</a></p>
+<ul>
+<li><a href="https://www.cloud.alipay.com/docs" target="_blank" rel="external">帮助与文档</a></li>
+<li><a href="https://www.cloud.alipay.com/press/list" target="_blank" rel="external">博客</a></li>
+</ul>
+</li>
+<li><p><a href="https://auth.cloud.alipay.com/#/cloudauth/guide" target="_blank" rel="external">加入蚂蚁金融云流程</a>，亦可联系解决方案团队邮箱：</p>
+<ul>
+<li>业务咨询:<a href="mailto:fincloud@cloud.alipay.com" target="_blank" rel="external">fincloud@cloud.alipay.com</a></li>
+<li>技术咨询:<a href="mailto:techsupport@cloud.alipay.com" target="_blank" rel="external">techsupport@cloud.alipay.com</a></li>
+<li>体验申请:<a href="http://tb.cn/FIo8Ayw" target="_blank" rel="external">调研问卷</a></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://rangeryu.github.io/antcloud-hexostatic/antcloud-hexostatic/2017-04-techinsight-workshop/" data-id="cj17acit10000lo2nsquapdf1" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/OceanBase/">OceanBase</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/中间件/">中间件</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/焦点动态/">焦点动态</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/移动平台/">移动平台</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/antcloud-hexostatic/tags/零号云客服/">零号云客服</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/antcloud-hexostatic/2017-04-techinsight-breakout-sessions/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">2017深圳云栖TechInsight活动回顾：创新金融</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/产品更新/">产品更新</a></li><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/方案实践/">方案实践</a></li><li class="category-list-item"><a class="category-list-link" href="/antcloud-hexostatic/categories/焦点动态/">焦点动态</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/OceanBase/">OceanBase</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/中间件/">中间件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/产品更新/">产品更新</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/方案实践/">方案实践</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/焦点动态/">焦点动态</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/移动平台/">移动平台</a></li><li class="tag-list-item"><a class="tag-list-link" href="/antcloud-hexostatic/tags/零号云客服/">零号云客服</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/antcloud-hexostatic/tags/OceanBase/" style="font-size: 15px;">OceanBase</a> <a href="/antcloud-hexostatic/tags/中间件/" style="font-size: 15px;">中间件</a> <a href="/antcloud-hexostatic/tags/产品更新/" style="font-size: 10px;">产品更新</a> <a href="/antcloud-hexostatic/tags/方案实践/" style="font-size: 12.5px;">方案实践</a> <a href="/antcloud-hexostatic/tags/焦点动态/" style="font-size: 17.5px;">焦点动态</a> <a href="/antcloud-hexostatic/tags/移动平台/" style="font-size: 20px;">移动平台</a> <a href="/antcloud-hexostatic/tags/零号云客服/" style="font-size: 15px;">零号云客服</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/antcloud-hexostatic/archives/2017/01/">January 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/antcloud-hexostatic/2017-04-techinsight-workshop/">2017深圳云栖TechInsight活动回顾：动手实验室-从零搭建一个金融级分布式交易系统</a>
+          </li>
+        
+          <li>
+            <a href="/antcloud-hexostatic/2017-04-techinsight-breakout-sessions/">2017深圳云栖TechInsight活动回顾：创新金融</a>
+          </li>
+        
+          <li>
+            <a href="/antcloud-hexostatic/2017-03-techinsight/">云栖大会&amp;TechInsight热点预告：创新金融分论坛及动手实验室</a>
+          </li>
+        
+          <li>
+            <a href="/antcloud-hexostatic/2017-03-ant-cloud-open/">蚂蚁云计算开放之路</a>
+          </li>
+        
+          <li>
+            <a href="/antcloud-hexostatic/2017-03-ar-alipay-mpaas/">从AR红包看支付宝移动开发</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Ranger Yu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/antcloud-hexostatic/" class="mobile-nav-link">Home</a>
+  
+    <a href="/antcloud-hexostatic/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/antcloud-hexostatic/fancybox/jquery.fancybox.css">
+  <script src="/antcloud-hexostatic/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/antcloud-hexostatic/js/script.js"></script>
+
+  </div>
+</body>
+</html>
